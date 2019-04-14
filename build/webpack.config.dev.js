@@ -2,6 +2,7 @@ const merge = require('webpack-merge')
 const webpack = require('webpack')
 
 const ForkTsCheckerPlugin = require('fork-ts-checker-webpack-plugin')
+const HardSourcePlugin = require('hard-source-webpack-plugin')
 const StartServerPlugin = require('start-server-webpack-plugin')
 
 const nodeExternals = require('webpack-node-externals')
@@ -78,6 +79,7 @@ module.exports = merge(baseConfig, {
 
     new StartServerPlugin('main.js'),
 
+    new HardSourcePlugin(),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.DefinePlugin(config.dev.env),
     new webpack.WatchIgnorePlugin([
