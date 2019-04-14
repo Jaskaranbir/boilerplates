@@ -1,0 +1,155 @@
+{
+  "defaultSeverity": "error",
+  "extends": [
+    "tslint:recommended",
+    "tslint-immutable",
+    // Ensure thaat the rule you intend to use is
+    // compatible with TypeScript, and isn't included
+    // natively (only rules with green arrows)
+    "tslint-eslint-rules",
+    "tslint-config-prettier"
+  ],
+  "rulesDirectory": [
+    "tslint-lines-between-class-members",
+    "tslint-plugin-prettier"
+  ],
+  "linterOptions": {
+    "exclude": [
+      "**/*.json"
+    ]
+  },
+  "rules": {
+    "array-type": [
+      true,
+      "array"
+    ],
+    "arrow-return-shorthand": true,
+    "await-promise": true,
+    "binary-expression-operand-order": true,
+    "callable-types": true,
+    "class-name": true,
+    "completed-docs": true,
+    "deprecation": true,
+    "file-name-casing": [
+      true,
+      "kebab-case"
+    ],
+    "forin": true,
+    "indent": [
+      true,
+      "spaces",
+      2
+    ],
+    "interface-name": [
+      true,
+      "never-prefix"
+    ],
+    "interface-over-type-literal": true,
+    "label-position": true,
+    "lines-between-class-members": true,
+    "member-access": true,
+    "member-ordering": [
+      true,
+      {
+        "order": [
+          "static-field",
+          "instance-field",
+          "static-method",
+          "instance-method"
+        ]
+      }
+    ],
+
+    "no-any": true,
+    "no-array-mutation": true,
+    "no-arg": true,
+    "no-bitwise": true,
+    "no-boolean-literal-compare": true,
+    "no-conditional-assignment": true,
+    "no-consecutive-blank-lines": true,
+    "no-console": false,
+    "no-construct": true,
+    "no-debugger":true,
+    "no-default-export": true,
+    "no-duplicate-super": true,
+    "no-dynamic-delete": true,
+    "no-empty-interface": true,
+    "no-empty": true,
+    "no-eval": true,
+    "no-floating-promises": true,
+    "no-implicit-dependencies": [
+      true,
+      "dev",
+      [
+        // Update these in tsconfig.json (as required), too!
+        "@root",
+        "@src",
+        "@tests"
+      ]
+    ],
+    "no-inferrable-types": [
+      true,
+      "ignore-params"
+    ],
+    "no-misused-new": true,
+    "no-non-null-assertion": true,
+    "no-object-mutation": true,
+    "no-parameter-reassignment": true,
+    "no-shadowed-variable": true,
+    "no-string-literal": true,
+    "no-string-throw": true,
+    "no-switch-case-fall-through": true,
+    "no-unbound-method": true,
+    "no-unnecessary-class": true,
+    "no-unnecessary-initializer": true,
+    "no-unnecessary-type-assertion": true,
+    "no-unused-expression": true,
+    "no-use-before-declare": true,
+    "no-var-keyword": true,
+
+    "object-literal-sort-keys": true,
+    "one-variable-per-declaration": true,
+    "prefer-conditional-expression": true,
+    "prefer-const": true,
+    "prefer-object-spread": true,
+
+    "prettier": [
+      true,
+      {
+        "bracketSpacing": false,
+        "endOfLine": "lf",
+        "printWidth": 80,
+        "semi": false,
+        "singleQuote": true,
+        "tabWidth": 2
+      }
+    ],
+
+    "promise-function-async": true,
+    "radix": true,
+    "readonly-keyword": true,
+    "readonly-array": true,
+    "triple-equals": [
+      true,
+      "allow-null-check"
+    ],
+    "typedef": [
+      true,
+      "call-signature",
+      "arrow-call-signature",
+      "parameter",
+      "arrow-parameter",
+      "property-declaration",
+      "member-variable-declaration",
+      "object-destructuring",
+      "array-destructuring"
+    ],
+    "unified-signatures": true,
+    "variable-name": [
+      true,
+      "ban-keywords",
+      "check-format",
+      "allow-leading-underscore"
+    ]
+  }
+}
