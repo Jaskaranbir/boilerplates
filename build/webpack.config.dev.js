@@ -12,17 +12,13 @@ const config = require('./config')
 
 const baseEntries = Object.keys(config.common.entry)
 // Add Webpack HMR-polling to every entry
-const entries = baseEntries.flatMap(entry => ({
-      [entry]: [
-        'webpack/hot/poll?1000',
-        config.common.entry[entry]
-      ]
-    })
-  )
-  .reduce((entry, entryObj) => ({
-    ...entryObj,
-    ...entry
-  }), {})
+const entries = Object.entries(config.common.entry).reduce(
+    (out, [entryKey, entryValue]) => ({
+        ...out,
+        [entryKey]: ["webpack/hot/poll?1000", entryValue]
+    }),
+    {}
+);
 
 module.exports = merge(baseConfig, {
   entry: entries,
