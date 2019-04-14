@@ -12,7 +12,7 @@ The goal is to enforce strict coding style (demanding more type-safety and immut
 * A very-strict set of rules for TSLint (especially focused on better type-safety, immutability, functional and declarative code)
 * Hot Module Reloading (might need to be improved)
 * Includes Jest for testing
-* Bundles all dependencies on production-biulds (so you don't have to install them while deploying). This might change in future (feel free to put your poinion about this).
+* Bundles all dependencies on production-builds (so you don't have to install them while deploying). This might change in future (feel free to share your opinions about this).
 
 ### How to use:
 
@@ -33,19 +33,19 @@ $ npm i
 $ npm run dev
 
 # Build your app with minification (for production)
-npm run build
+$ npm run build
 
 # Run TSLint on your application
-npm run lint
+$ npm run lint
 
 # Run Jest tests with linter:
-npm run test
+$ npm run test
 
 # Run Jest tests but don't run linter
-npm run test:no-lint
+$ npm run test:no-lint
 
 # Run Jest tests in watch mode
-npm run test:watch
+$ npm run test:watch
 ```
 
 ### Contributions:
