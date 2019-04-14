@@ -10,6 +10,7 @@ The goal is to enforce strict coding style (demanding more type-safety and immut
 * Webpack 4
 * TypeScript 3.4.x
 * A very-strict set of rules for TSLint (especially focused on better type-safety, immutability, functional and declarative code)
+* Fork-TS-Checker for asynchronously running linter
 * Hot Module Reloading (might need to be improved)
 * Includes Jest for testing
 * Bundles all dependencies on production-builds (so you don't have to install them while deploying). This might change in future (feel free to share your opinions about this).
