@@ -28,7 +28,16 @@
     "binary-expression-operand-order": true,
     "callable-types": true,
     "class-name": true,
-    "completed-docs": true,
+    "completed-docs": [
+      true,
+      "classes",
+      "enums",
+      "functions",
+      "interfaces",
+      "methods",
+      "namespaces",
+      "types"
+    ],
     "deprecation": true,
     "file-name-casing": [
       true,
