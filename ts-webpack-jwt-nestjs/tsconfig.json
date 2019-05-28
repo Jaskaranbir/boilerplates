@@ -1,0 +1,67 @@
+{
+  "compileOnSave": true,
+  "include": [
+    "**/*.ts",
+    "**/*.json",
+    "*.json"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    // Tests have their own tsconfig
+    "**/*.test.ts"
+  ],
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "dist",
+    // All paths below must be updated in
+    // jest.config.json, too!
+    "paths": {
+       // Update these in build/config.js and tslint.json, too!
+       "@src/*": ["src/*"],
+       "@root/*": ["./*"],
+
+       // Testing-only aliases.
+       // These are not used in Webpack-bundling, so these
+       // don't need to be in Webpack-configuration.
+       // These still need to be in tslint.json as linter
+       // is always used, whether Webpack-ing code or not.
+       "@tests/*": ["tests/*"]
+    },
+
+    "allowSyntheticDefaultImports": true,
+    "alwaysStrict": true,
+    "allowJs": true,
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "declaration": false,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "incremental": true,
+    "listEmittedFiles": false,
+    "listFiles": false,
+    "newLine": "lf",
+    "noErrorTruncation": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "pretty": true,
+    "removeComments": true,
+    "resolveJsonModule": true,
+    "strict": true,
+
+    "stripInternal": true,
+    "skipLibCheck": true,
+    "target": "esnext",
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "lib": [
+      "esnext"
+    ]
+  }
+}

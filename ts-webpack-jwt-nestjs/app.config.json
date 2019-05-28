@@ -1,0 +1,45 @@
+{
+  "common": {
+    "env": {}
+  },
+
+  "dev": {
+    "port": 8080,
+    "env": {
+      "awsAccessKeyId": "someID",
+      "awsSecretAccessKey": "someKey",
+      "awsRegion": "someRegion",
+      "jwtSecret": "secret",
+      "jwtTTLSec": 10800,
+      "logLevel": "trace"
+    },
+    "db": {
+      "database": "<dev-db>",
+      "host": "<dev-host>",
+      "logging": true,
+      "password": "<dev-pass>",
+      "port": -1,
+      "synchronize": true,
+      "type": "<dev-type>",
+      "username": "<dev-username>"
+    }
+  },
+
+  "prod": {
+    "port": 8080,
+    "env": {
+      "jwtSecret": "secret",
+      "jwtTTLSec": 10800
+    },
+    "db": {
+      "database": "<dev-db>",
+      "host": "<dev-host>",
+      "logging": true,
+      "password": "<dev-pass>",
+      "port": -1,
+      "synchronize": true,
+      "type": "<dev-type>",
+      "username": "<dev-username>"
+    }
+  }
+}

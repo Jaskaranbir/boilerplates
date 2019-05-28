@@ -1,0 +1,9 @@
+.history
+.vscode
+
+coverage
+dist
+node_modules
+reports-test
+
+npm-debug.log

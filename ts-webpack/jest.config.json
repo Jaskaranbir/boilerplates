@@ -1,0 +1,30 @@
+{
+  "preset": "ts-jest",
+  "verbose": true,
+  "collectCoverage": true,
+  "errorOnDeprecated": true,
+
+  "moduleFileExtensions": [
+    "js",
+    "ts",
+    "json",
+    "node"
+  ],
+  "moduleDirectories": [
+    "node_modules"
+  ],
+  "testEnvironment": "node",
+
+  "globals": {
+    "ts-jest": {
+      "tsConfig": "./tests/tsconfig.json"
+    }
+  },
+
+  "moduleNameMapper": {
+    "^@root(.*)$": "<rootDir>$1",
+    "^@src(.*)$": "<rootDir>/src$1",
+    "^@tests(.*)$": "<rootDir>/tests$1"
+  },
+  "testRegex": "^tests/.*|(\\.|/)(test|spec)\\.ts$"
+}
