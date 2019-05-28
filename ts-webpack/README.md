@@ -18,7 +18,7 @@ The goal is to enforce strict coding style (demanding more type-safety and immut
 ### How to use:
 
 ```Bash
-$ git clone https://github.com/Jaskaranbir/ts-webpack-starter <your-project-name>
+$ git clone https://github.com/Jaskaranbir/boilerplates <your-project-name>
 
 $ cd  <your-project-name>
 
