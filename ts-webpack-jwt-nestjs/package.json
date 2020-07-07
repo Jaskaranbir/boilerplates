@@ -64,7 +64,7 @@
     "jest": "^24.8.0",
     "json5-loader": "^2.0.0",
     "node-notifier": "^5.4.0",
-    "npm": "^6.9.0",
+    "npm": "^6.14.6",
     "prettier": "^1.17.1",
     "progress-bar-webpack-plugin": "^1.12.1",
     "start-server-webpack-plugin": "^2.2.5",
