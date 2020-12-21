@@ -63,7 +63,7 @@
     "hard-source-webpack-plugin": "^0.13.1",
     "jest": "^24.8.0",
     "json5-loader": "^2.0.0",
-    "node-notifier": "^5.4.0",
+    "node-notifier": "^8.0.1",
     "npm": "^6.9.0",
     "prettier": "^1.17.1",
     "progress-bar-webpack-plugin": "^1.12.1",
