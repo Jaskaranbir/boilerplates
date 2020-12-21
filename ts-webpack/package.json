@@ -38,7 +38,7 @@
     "friendly-errors-webpack-plugin": "^1.7.0",
     "hard-source-webpack-plugin": "^0.13.1",
     "jest": "^24.7.1",
-    "node-notifier": "^5.4.0",
+    "node-notifier": "^8.0.1",
     "prettier": "^1.17.0",
     "progress-bar-webpack-plugin": "^1.12.1",
     "start-server-webpack-plugin": "^2.2.5",
